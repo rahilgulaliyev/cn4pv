@@ -36,7 +36,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-1
+          - wn1
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -67,7 +67,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-2
+          - wn2
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -98,7 +98,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-1
+          - wn1
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -129,7 +129,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-2
+          - wn2
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -160,7 +160,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-1
+          - wn1
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -191,7 +191,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-2
+          - wn2
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -222,7 +222,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-1
+          - wn1
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -253,7 +253,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-2
+          - wn2
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -284,7 +284,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-1
+          - wn1
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -315,7 +315,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-2
+          - wn2
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -346,7 +346,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-1
+          - wn1
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -377,5 +377,5 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node-2
+          - wn2
 {{- end }}          
