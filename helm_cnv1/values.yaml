@@ -11,7 +11,7 @@
 # Valid multus tags are : [enable|disable] Keep the multus as enable for openshift and native deployments.
 # Valid tags for volumes for native deployment are : [static|dynamic]
 cluster:
-  deployTo: "eks"
+  deployTo: "native"
   multus: "disable"
   volumes: "static"
 
@@ -21,39 +21,39 @@ firewall:
 
 # Panorama tags
 panorama:
-  ip: "<Panorama-IP>" 
+  ip: "10.34.51.70" 
   ip2: 
-  authKey: "<Panorama-auth-key>"
-  deviceGroup: "<Panorama-device-group>"
-  template: "<panorama-template-stack>" 
-  cgName: "<panorama-collector-group>"
+  authKey: "887673300037750"
+  deviceGroup: "CNFW"
+  template: "CNFW-STACK" 
+  cgName: "CNFW-CG"
 
 # Customer Support Portal PIN information
 csp:
-  pinId: ""
-  pinValue: "" 
+  pinId: "7fc6a3f0-fc78-487b-9172-eeee56429e0b"
+  pinValue: "e128f7fdf3934863a4602a9a1e322eeb" 
   alternateUrl: "" 
  
 # MP container tags
 mp:
   initImage: gcr.io/pan-cn-series/pan_cn_mgmt_init
-  initVersion: preferred
+  initVersion: 3.0.2
   image: gcr.io/pan-cn-series/panos_cn_mgmt
-  version: preferred-10.2
+  version: 10.2.8
   cpuLimit: 4
   memoryLimit: 4.0Gi
 
 # DP container tags
 dp:
   image: gcr.io/pan-cn-series/panos_cn_ngfw
-  version: preferred-10.2
-  cpuLimit: 1
-  memoryLimit: 2.25Gi
+  version: 10.2.8
+  cpuLimit: 2
+  memoryLimit: 4Gi
 
 # CNI container tags
 cni:
   image: gcr.io/pan-cn-series/pan_cni
-  version: preferred
+  version: 3.0.4
 
 ##############################
 # Non Mandatory Parameters
